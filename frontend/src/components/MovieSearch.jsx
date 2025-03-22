@@ -25,7 +25,7 @@ const MovieSearch = ({ refreshWatchlist }) => {
             <form onSubmit={handleSearch}>
                 <input 
                     type="text"
-                    value = {query}
+                    value={query}
                     onChange={(e) => setQuery(e.target.value)}
                 />
                 <button type="submit">Search</button>
@@ -34,7 +34,8 @@ const MovieSearch = ({ refreshWatchlist }) => {
             <div>
                 {movies.map((movie) => (
                     <MovieCard
-                        key={movie}
+                        key={movie.imdbID}
+                        movie={movie}
                         onAdd={handleAddToWatchlist}
                     />
                 ))}
