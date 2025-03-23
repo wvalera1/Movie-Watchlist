@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { searchMovies, addToWatchlist } from '../api/api'
-import MovieCard from './MovieCard'
+import { searchMovies, addToWatchlist } from '../../api/api'
+import MovieCard from '../MovieCard/MovieCard'
 import './MovieSearch.css'
 
 const MovieSearch = ({ refreshWatchlist }) => {

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { getWatchlist } from './api/api'
-import MovieSearch from './components/MovieSearch'
-import Watchlist from './components/Watchlist'
-import theaterIcon from './theater.svg'
+import MovieSearch from './components/MovieSearch/MovieSearch'
+import Watchlist from './components/Watchlist/Watchlist'
+import theaterIcon from './assets/theater.svg'
 import './App.css'
 
 function App() {

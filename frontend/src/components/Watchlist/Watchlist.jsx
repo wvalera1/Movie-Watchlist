@@ -1,6 +1,6 @@
 import React from 'react'
-import { removeFromWatchlist } from '../api/api'
-import MovieCard from './MovieCard'
+import { removeFromWatchlist } from '../../api/api'
+import MovieCard from '../MovieCard/MovieCard'
 import './Watchlist.css'
 
 const Watchlist = ({ watchlist, refreshWatchlist }) => {
