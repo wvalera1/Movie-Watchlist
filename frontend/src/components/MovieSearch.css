@@ -5,3 +5,17 @@
     gap: 15px;
     margin-top: 20px;
 }
+
+input {
+    background-color: #534B52;
+    color: #FFFFFF;
+    padding: 8px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+}
+
+input::placeholder {
+    color: #FFFFFF;
+}

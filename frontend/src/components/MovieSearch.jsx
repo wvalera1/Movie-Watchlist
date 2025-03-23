@@ -25,6 +25,7 @@ const MovieSearch = ({ refreshWatchlist }) => {
             <form onSubmit={handleSearch}>
                 <input 
                     type="text"
+                    placeholder='Search for a movie...'
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                 />
