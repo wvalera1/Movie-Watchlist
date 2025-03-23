@@ -11,7 +11,7 @@ const Watchlist = ({ watchlist, refreshWatchlist }) => {
 
     return (
         <div>
-            <h2>My Watchlist</h2>
+            <h2>MY WATCHLIST</h2>
             <div className='movies-container'> 
                 {watchlist.length > 0 ? (
                     watchlist.map((movie) => (

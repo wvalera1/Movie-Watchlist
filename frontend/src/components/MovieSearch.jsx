@@ -21,7 +21,7 @@ const MovieSearch = ({ refreshWatchlist }) => {
 
     return (
         <div>
-            <h2>Search Movies</h2>
+            <h2>SEARCH MOVIES</h2>
             <form onSubmit={handleSearch}>
                 <input 
                     type="text"

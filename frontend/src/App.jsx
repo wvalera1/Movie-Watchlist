@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { getWatchlist } from './api/api'
 import MovieSearch from './components/MovieSearch'
 import Watchlist from './components/Watchlist'
+import theaterIcon from './theater.svg'
 import './App.css'
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
 
   return (
     <div>
-      <h1>Movie Watchlist</h1>
+      <img src={theaterIcon} alt="" draggable='false' className='theater-icon' />
+      <h1>MOVIE WATCHLIST</h1>
       <MovieSearch refreshWatchlist={fetchWatchlist} />
       <Watchlist watchlist={watchlist} refreshWatchlist={fetchWatchlist} />
     </div>
