@@ -1,3 +1,7 @@
+/* Watchlist component: Displays a list of movies that the user has saved to their watchlist.
+Fetches data from the backend database (watchlist.db) and displays each movie using the MovieCard component.
+*/
+
 import React from 'react'
 import { removeFromWatchlist } from '../../api/api'
 import MovieCard from '../MovieCard/MovieCard'

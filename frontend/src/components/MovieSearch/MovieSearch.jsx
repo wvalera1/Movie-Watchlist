@@ -1,3 +1,7 @@
+/* MovieSearch component: Displays a search bar where users can search for movies by title.
+Fetches and displays search results in a list of movies using the MovieCard component.
+*/
+
 import React, { useState } from 'react'
 import { searchMovies, addToWatchlist } from '../../api/api'
 import MovieCard from '../MovieCard/MovieCard'

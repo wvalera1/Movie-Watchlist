@@ -1,3 +1,7 @@
+# Flask app for managing a simple movie watchlist.
+# Provides routes for handling retrieval of saved all saved movies,
+# removal of movies, and addition of movies.
+
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy

@@ -1,3 +1,9 @@
+/* App component: Root component of the Movie Watchlist app. 
+Fetches user's watchlist from the backend
+Renders MovieSearch and Watchlist components
+Updates watchlist state when movies are added/removed. 
+*/
+
 import React, { useState, useEffect } from 'react'
 import { getWatchlist } from './api/api'
 import MovieSearch from './components/MovieSearch/MovieSearch'

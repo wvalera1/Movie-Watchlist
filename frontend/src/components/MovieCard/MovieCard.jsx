@@ -1,3 +1,6 @@
+/* MovieCard component: Displays movie details including title, year it was released
+and the poster. Used inside Watchlist and MovieSearch components */
+
 import React from 'react'
 import './MovieCard.css'
 
