@@ -31,7 +31,7 @@ const MovieSearch = ({ refreshWatchlist }) => {
                 <button type="submit">Search</button>
             </form>
 
-            <div>
+            <div className='movies-container'>
                 {movies.map((movie) => (
                     <MovieCard
                         key={movie.imdbID}
