@@ -60,28 +60,28 @@ def get_watchlist():
 
 # Add Movie Route
 # Handles POST requests to add new movies to the user's current watchlist
-#@app.route("/watchlist", methods=["POST"])
-#def add_to_watchlist():
-#    data = request.json
-#    if not data or "imdbID" not in data:
-#        return jsonify({"error": "Invalid movie data"}), 400
+@app.route("/watchlist", methods=["POST"])
+def add_to_watchlist():
+    data = request.json
+    if not data or "imdbID" not in data:
+        return jsonify({"error": "Invalid movie data"}), 400
 
     # Check if movie already exists in the database
-#    existing_movie = Movie.query.filter_by(imdbID=data["imdbID"]).first()
-#    if existing_movie:
-#        return jsonify({"message": "Movie already in watchlist"}), 200
+    existing_movie = Movie.query.filter_by(imdbID=data["imdbID"]).first()
+    if existing_movie:
+        return jsonify({"message": "Movie already in watchlist"}), 200
 
-#    new_movie = Movie(
-#        imdbID=data["imdbID"],
-#        title=data["Title"],
-#        year=data["Year"],
-#        poster=data["Poster"]
-#    )
+    new_movie = Movie(
+        imdbID=data["imdbID"],
+        title=data["Title"],
+        year=data["Year"],
+        poster=data["Poster"]
+    )
 
-#    db.session.add(new_movie)
-#    db.session.commit()
+    db.session.add(new_movie)
+    db.session.commit()
 
-#    return jsonify({"message": "Movie added to watchlist"}), 201
+    return jsonify({"message": "Movie added to watchlist"}), 201
 
 # Remove Movie Route
 # Handles DELETE requets to remove movies from the user's current watchlist
